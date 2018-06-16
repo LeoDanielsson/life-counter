@@ -37,13 +37,13 @@
 }
 
 .LifeTotal {
-  font-size: 90px;
+  font-size: 130px;
   flex-grow: 1;
   text-align: center;
 }
 
 .LifeButton {
-  font-size: 90px;
+  font-size: 130px;
   padding: 0 20px;
   flex-basis: 110px;
   flex-shrink: 0;
