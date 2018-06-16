@@ -1,4 +1,7 @@
 # Life counter
 A simple life counter for Magic: The Gathering
 
-Available at magic.lugosoft.se
+
+## Run locally
+npm install
+npm run start
