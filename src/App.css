@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+}
+
+.Player {
+  flex-basis: 50%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.Player1 {
+  background-color: black;
+  color: white;
+  transform: rotate(180deg);
+}
+
+.Player1 button {
+  color: white;
+}
+
+
+.Player2 {
+  background-color: white;
+}
+
+.LifeTotal {
+  font-size: 130px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.LifeButton {
+  font-size: 130px;
+  padding: 0 20px;
+  flex-basis: 110px;
+  flex-shrink: 0;
+  height: 80%;
+  font-family: 'Indie Flower', cursive;
+}
+
+.ResetButton {
+  position: absolute;
+  font-family: 'Indie Flower', cursive;
+  padding: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  font-size: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
