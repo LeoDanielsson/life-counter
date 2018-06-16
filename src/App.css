@@ -9,6 +9,12 @@
 .Player {
   flex-basis: 50%;
   width: 100vw;
+}
+
+.Container {
+  height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -31,13 +37,13 @@
 }
 
 .LifeTotal {
-  font-size: 130px;
+  font-size: 90px;
   flex-grow: 1;
   text-align: center;
 }
 
 .LifeButton {
-  font-size: 130px;
+  font-size: 90px;
   padding: 0 20px;
   flex-basis: 110px;
   flex-shrink: 0;

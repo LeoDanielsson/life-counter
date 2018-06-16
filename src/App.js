@@ -15,41 +15,46 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Player Player1">
-          <button className="LifeButton Minus" onClick={() => {
-            requestFullscreen();
-            this.setState({ player1: player1 - 1 })
-          }}>
-            -
+          <div className="Container">
+            <button className="LifeButton Minus" onClick={() => {
+              requestFullscreen();
+              this.setState({ player1: player1 - 1 })
+            }}>
+              -
           </button>
-          <div className="LifeTotal">
-            {player1}
+            <div className="LifeTotal">
+              {player1}
+            </div>
+            <button className="LifeButton Plus" onClick={() => {
+              requestFullscreen();
+              this.setState({ player1: player1 + 1 })
+            }}>
+              +
+          </button>
+            <button className="ResetButton" onClick={() => this.setState({ player1: 20 })}>
+              Reset
+          </button>
           </div>
-          <button className="LifeButton Plus" onClick={() => {
-            requestFullscreen();
-            this.setState({ player1: player1 + 1 })
-          }}>
-            +
-          </button>
-          <button className="ResetButton" onClick={() => this.setState({ player1: 20 })}>
-            Reset
-          </button>
         </div>
         <div className="Player Player2">
-          <button className="LifeButton Minus" onClick={() => {
-            requestFullscreen();
-            this.setState({ player2: player2 - 1 })
-          }}>
-            -
+          <div className="Container">
+
+            <button className="LifeButton Minus" onClick={() => {
+              requestFullscreen();
+              this.setState({ player2: player2 - 1 })
+            }}>
+              -
           </button>
-          <div className="LifeTotal">
-            {player2}
+            <div className="LifeTotal">
+              {player2}
+            </div>
+            <button className="LifeButton Plus" onClick={() => {
+              requestFullscreen();
+              this.setState({ player2: player2 + 1 })
+            }}>
+              +
+          </button>
           </div>
-          <button className="LifeButton Plus" onClick={() => {
-            requestFullscreen();
-            this.setState({ player2: player2 + 1 })
-          }}>
-            +
-          </button>
         </div>
         <button className="ResetButton" onClick={() => this.setState({ player2: 20 })}>
           Reset
